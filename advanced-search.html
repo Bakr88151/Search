@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Advanced Search</title>
+        <style>
+            h2{
+                color: rgb(248, 72, 72);
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            body{
+                padding: 20px;
+            }
+            #input-fields{
+                display: grid;
+                grid-column-gap: 10px;
+                grid-row-gap: 20px;
+                grid-template-columns: 200px 500px;
+                grid-template-rows: 30px 30px 30px 30px;
+                column-count: 3;
+                width: 700px;
+            }
+            form > input{
+                height: 30px;
+                border-color: rgb(184, 184, 184);
+                border-width: 1px;
+                border-radius: 3px;
+                margin-bottom: 10px;
+
+            }
+            form > button{
+                position: absolute;
+                left: 600px;
+                margin: 20px;
+                color: white;
+                background-color: rgb(75,142,250);
+                padding: 5px;
+                border-width: 1px;
+            }
+            #image-and-advanced-search{
+                position: absolute;
+                left: 99%;
+                transform: translate(-100%);
+                width: 250px;
+                text-align: right;
+                margin-top: 10px;
+            }
+            a{
+                padding: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="image-and-advanced-search">
+            <a href="index.html">Google Search</a>
+        </div>
+        <h2>Advanced Search</h2>
+        <hr>
+        <h4>Find pages with...</h4>
+            <form action="https://google.com/search">
+                <div id="input-fields">
+                    all these words :
+                    <input name="as_q" type="text" autocomplete="off">
+                    this exact word or phrase:
+                    <input name="as_epq" type="text" autocomplete="off">
+                    any of these words:
+                    <input name="as_oq" type="text" autocomplete="off">
+                    none of these words:
+                    <input name="as_eq" type="text" autocomplete="off">
+                </div>
+                <button type="submit">Advanced Search</button>
+            </form>
+
+    </body>
+</html>

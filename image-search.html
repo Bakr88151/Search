@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Image Search</title>
+        <style>
+            .search{
+                position: absolute;
+                display: grid;
+                place-items: center;
+                height: 70%;
+                width: 99%;
+            }
+            input[type='text']{
+                width: 500px;
+                height: 40px;
+                border: solid lightgray;
+                border-width: 1px;
+                border-radius: 30px;
+                padding-left: 15px;
+                margin-bottom: 20px;
+            }
+            input[type='text']:focus{
+                outline-width: 1px;
+                outline-color: rgba(160, 154, 154, 0.267);
+            }
+            form{
+                width: 500px;
+                display: grid;
+                place-items: center;
+            }
+            input[type='submit']{
+                background-color: rgb(216, 214, 214);
+                width: 160px;
+                height: 40px;
+                border-width: 0px;
+                padding-left: 10px;
+                padding-right: 10px;
+                border-radius: 7px;
+            }
+            input[type="submit"]:hover{
+                border-color: rgb(80, 80, 80);
+                border-width: 2px;
+            }
+            #image-and-advanced-search{
+                position: absolute;
+                left: 99%;
+                top: 0;
+                transform: translate(-100%);
+                width: 250px;
+                text-align: right;
+                margin-top: 10px;
+            }
+            a{
+                padding: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="search">
+            <div id="image-and-advanced-search">
+                <a href="index.html">Google Search</a>
+            </div>
+            <form method="get" action="http://images.google.com/images">
+                <img src="google-Logo.png" alt="google Logo " style="margin-bottom: 10px;">
+                <input type="text" name="q" autocomplete="off" autofocus placeholder="Image search" />
+                <input type="submit" value="Google Search" />
+            </form>
+        </div>
+    </body>
+</html>
